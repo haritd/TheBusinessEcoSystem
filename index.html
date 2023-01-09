@@ -1,0 +1,575 @@
+<!------------------------------------------------------
+--------- BASIC STYLES ---------------------------------
+------------------------------------------------------->
+
+<style>
+  #divMain {
+  font-family: "MS Sans Serif"
+}
+
+#divMain table {
+  border-spacing: 0;
+}
+
+#divMain > table > tbody > tr > td {
+  height: 50px;
+  padding: 0 5px 0 5px;
+}
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+  
+  .tbl-menu td {
+      cursor: pointer;
+  }
+</style>
+
+<!------------------------------------------------------
+--------- BASIC SCRIPTS / IMPORTS ----------------------
+------------------------------------------------------->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+
+
+<!------------------------------------------------------
+--------- START OF MAIN PAGE ---------------------------
+------------------------------------------------------->
+
+<div id="divMain" style="width: 100%; padding: 10px; font-family: 'Questrial';">
+  <table style="width: 900px; margin: 0 auto; box-shadow: 0 0 10px #888;">
+    <tbody>
+
+      <!------------------------------------------------------
+--------- TOP BAR --------------------------------------
+------------------------------------------------------->
+      <tr>
+        <td colspan="2">
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 25%; text-align: center;">
+                <img src="http://www.clientearth.org/wp-content/themes/cev5-kitten/images/clientearth_website_logo.png" style="height: 45px" />
+              </td>
+              <td id="tdSearch" style="width: 50%; text-align: center; background-color: #66cc33; color: white; height: 50px;">
+                <!-- Search Bar Goes Here -->
+              </td>
+              <td style="width: 25%; text-align: center;">
+                <strong>My Site&emsp;</strong>
+                <span style="font-size: 19px">|</span>
+                <strong>&emsp;Yourdrive</strong>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!------------------------------------------------------
+--------- TOP NAV BAR ----------------------------------
+------------------------------------------------------->
+
+      <tr style="background-color: #99cc66; color: white; font-weight: bold;">
+        <td colspan="2">
+          <div style="width: 100%;">
+            <table class="tbl-menu" style="float: left; margin-top: 3px; margin: 0 auto; border-spacing: 5px; text-align: center; width: 100%">
+              <tr>
+                <td style="height: 30px; padding: 0 5px 0 5px; width: 12.5%">
+                  <a style="color: white; text-decoration: none;" href="/">
+          HOME
+        </a>
+                </td>
+                <td style="height: 30px;padding: 0 5px 0 5px; width: 12.5%">
+                  <a style="color: white; text-decoration: none;" href="/">
+          About Us
+        </a>
+                </td>
+                
+            <td id="tdProgrammes" style="height: 30px; position: relative; width: 12.5%">
+                  Solutions
+                  <div id="divProgrammesMenu" style="position: absolute; z-index: 94; color: black; font-weight: normal; display:none; float: left; background-color: gainsboro;
+            height: auto; width: 350px; left: 0; top: 30px;
+            padding: 10px; box-shadow: 0 0 15px #666;">
+                    <ul style="list-style-type: none; padding: 0; text-align: left;">
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/biodiversity/">
+                PROPRIETOR
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/climateforests/">
+                STRATUP
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/strategiclitigation/">
+                MSME
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/strategiclitigation/">
+                SMALL BUSINESS
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/strategiclitigation/">
+                CORPORATION 
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/strategiclitigation/">
+                NGO &amp; SOCIETY
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/strategiclitigation/">
+                INSTITUTION &amp; GOVERNMNT
+              </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td id="tdProgrammes" style="height: 30px; position: relative; width: 12.5%">
+                  Services
+                  <div id="divProgrammesMenu" style="position: absolute; z-index: 94; color: black; font-weight: normal; display:none; float: left; background-color: gainsboro;
+            height: auto; width: 350px; left: 0; top: 30px;
+            padding: 10px; box-shadow: 0 0 15px #666;">
+                    <ul style="list-style-type: none; padding: 0; text-align: left;">
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/biodiversity/">
+                Accounting and Advisory services
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/climateforests/">
+                Indirect Taxes &amp; International Trade
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/strategiclitigation/">
+                Wealth Management
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/strategiclitigation/">
+                Indirect Taxes &amp; International Trade
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/strategiclitigation/">
+                Business Advisory 
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/strategiclitigation/">
+                Investment Banking &amp; capital Market
+              </a>
+                      </li>
+                      <li style="height: 30px; line-height: 30px; border-bottom: 1px solid white;">
+                        <a style="color: black; text-decoration: none;" href="/programmes/strategiclitigation/">
+                Industry Research &amp; Analysis
+              </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td style="height: 30px;padding: 0 5px 0 5px; width: 12.5%">
+                  <a style="color: white; text-decoration: none;" href="/it/">
+          IT
+        </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+
+      <!------------------------------------------------------
+--------- REGIONS ROW ----------------------------------
+------------------------------------------------------->
+
+      <!------------------------------------------------------
+--------- ANNOUNCEMENT CAROUSEL  -----------------------
+------------------------------------------------------->
+
+      <tr style="height: 200px;">
+        <td colspan="2" style="padding: 30px 0 30px 0; height: 200px;">
+          <div class="carousel slide" data-ride="carousel" id="quote-carousel" style="height: 100%;">
+            <!-- Bottom Carousel Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#quote-carousel" data-slide-to="1"></li>
+              <li data-target="#quote-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Carousel Slides / Quotes -->
+            <div class="carousel-inner">
+
+              <!-- Quote 1 -->
+              <div class="item active">
+                <blockquote>
+                  <div class="row">
+                    <div class="col-sm-3 text-center">
+                      <img class="img-circle" src="http://www.reactiongifs.com/r/overbite.gif" style="width: 100px;height:100px;">
+                      <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                    </div>
+                    <div class="col-sm-9">
+                      <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                      <small>Someone famous</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+              <!-- Quote 2 -->
+              <div class="item">
+                <blockquote>
+                  <div class="row">
+                    <div class="col-sm-3 text-center">
+                      <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/mijustin/128.jpg" style="width: 100px;height:100px;">
+                    </div>
+                    <div class="col-sm-9">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                      <small>Someone famous</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+              <!-- Quote 3 -->
+              <div class="item">
+                <blockquote>
+                  <div class="row">
+                    <div class="col-sm-3 text-center">
+                      <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
+                    </div>
+                    <div class="col-sm-9">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                      <small>Someone famous</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Carousel Buttons Next/Prev -->
+            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+          </div>
+        </td>
+      </tr>
+
+      <!------------------------------------------------------
+--------- HEADER ROW 1 ---------------------------------
+------------------------------------------------------->
+
+      <tr style="background-color: #99cc66; color: white; font-weight: bold; font-size: 16px;">
+        <td colspan="1" style="width: 50%; text-align: left; padding-left: 10px;">
+          FINANCE
+        </td>
+        <td style="text-align: right; width: 50%; padding-right: 10px; font-weight: normal; font-size: small;">
+          <table style="float: right;">
+            <tr>
+              <td style="padding: 0 10px 0 10px;">
+                <i class="fa fa-thumbs-up"></i><br/>I Like It </td>
+              <td style="padding: 0 10px 0 10px;">
+                <i class="fa fa-tags"></i><br/>Tags & Notes
+              </td>
+            </tr>
+          </table>
+        </td>
+</tr>
+
+
+<!------------------------------------------------------
+--------- CONTENT ROW 1a ---------------------------------
+------------------------------------------------------->
+
+<tr style="height: 400px; padding: 0;">
+  <td colspan="2" style="width: 100%; padding: 0;">
+    <table style="width: 100%; height: 100%;">
+      <tr style="padding: 0;">
+        <td style="width: 20%; padding: 5px; vertical-align: top;">
+          <p><a href="#">Task Management</a><p>
+          <p><a href="#">Project Management</a></p>
+          <p><a href="#">Invoices Page</a></p>
+          <p><a href="#">Finance Reports</a></p>
+          <p><a href="#">Finance System</a></p>
+          <p><a href="#">Contact Management</a></p>          
+        </td>
+        <td style="width: 60%; padding: 5px; vertical-align: top;">
+          <table style="width: 100%; height: 100%;">
+            <tr style="height: 30px;">
+              <td>
+                <div style="float: left; height: 30px; width: 40px; margin-right: 5px;
+                            background-color: dodgerblue;
+                            text-align: center; line-height: 30px;">EW</div>
+                <div style="float: left; height: 30px; width: 40px; margin-right: 5px;
+                            background-color: lightcoral;
+                            text-align: center; line-height: 30px;">RL</div>
+                <div style="float: left; height: 30px; width: 40px; margin-right: 5px;
+                            background-color: mediumseagreen;
+                            text-align: center; line-height: 30px;">FG</div>
+                <div style="float: left; height: 30px; width: 40px; margin-right: 5px;
+                            background-color: orchid;
+                            text-align: center; line-height: 30px;">IP</div>
+                <div style="float: left; height: 30px; width: 40px; margin-right: 5px;
+                            background-color: darkcyan;
+                            text-align: center; line-height: 30px;">ED</div>
+                <div style="float: left; height: 30px; width: 40px; margin-right: 5px;
+                            background-color: orange;
+                            text-align: center; line-height: 30px;">CC</div>
+              </td>
+            </tr>
+            <tr style="height: 235px;">
+              <td style="background-color: gainsboro; border-top: 2px solid white; border-bottom: 2px solid white;">
+              </td>
+            </tr>
+            <tr style="height: 235px;">
+              <td style="vertical-align: top;">
+                Group Tasks Tasks List
+                <br/>
+                <br/>
+                RL will assign tasks to Finance Team
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td style="width: 20%; padding: 5px; vertical-align: top;">
+          <table style="height: 100%;">
+            <tr>
+              <td style="vertical-align: top;">
+                Document Library (including Invu migrated data)
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align: top;">
+                Searchable Trackers Report Page (Travel, Purchase, ...)
+              </td>
+            </tr>
+            <tr>
+            <tr>
+              <td style="vertical-align: top;">
+                Expenses
+              </td>
+            </tr>              
+              <td style="vertical-align: top;">
+                Discussion Board / News Feed
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+      
+  </td>
+</tr>
+
+<!------------------------------------------------------
+--------- CONTENT ROW 1b ---------------------------------
+------------------------------------------------------->
+<tr>
+  <td colspan="2" style="padding: 0;">
+  <table style="width: 100%;">
+    <tr>
+  <td style="background: #EEEEEE; height: 235px; width: 80%; vertical-align: top; padding: 5px;">
+    Biodiversity group email
+  </td>
+    </tr>
+  </table>
+  </td>
+</tr>
+
+<!------------------------------------------------------
+--------- FOOTER ROW ---------------------------------
+------------------------------------------------------->
+
+<tr style="background-color: #666666; color: white;">
+  <td colspan="2" style="padding: 0;">
+    <div id="divFooter">
+      <table style="width: 100%;">
+        <tr style="height: 150px;">
+          <td style="width: 33%; text-align: center;">
+            <img src="http://www.free-icons-download.net/images/share-logo-icon-65488.png" style="width: 40px; height: 40px;" />
+            <br/><br/> Shared Contacts
+          </td>
+          <td style="width: 33%">
+            <div style="float: left; width: 50%; padding-right: 20px;">
+              <a href="http://www.clientearth.org/" target="_blank" style="color: white;">
+                    company website
+                  </a>
+              <br/>
+              <a href="#" style="color: white;">
+                    SharePoint overview
+                  </a>
+            </div>
+            <div style="float: right; width: 50%; padding-left: 20px;">
+              <a href="/" style="color: white;">
+                    home
+                  </a>
+              <br/>
+              <a href="/comms/" style="color: white;">
+                    news
+                  </a>
+              <br/>
+              <a href="/finance/" style="color: white;">
+                    accounts
+                  </a>
+              <br/>
+              <a href="/_layouts/15/osssearchresults.aspx" style="color: white;">
+                    search
+                  </a>
+              <br/>
+            </div>
+          </td>
+          <td style="width: 33%">
+            <table style="width: 100%;">
+              <tr>
+                <td style="width: 25%;">
+                  <a href="https://www.facebook.com/sharer.php?u=http://www.clientearth.org/" target="_blank" style="color: white; text-decoration: none;">
+                    <img src="http://www.dev.clientearth.org/wp-content/uploads/ss_facebook.png" />
+                    <br/><br/> Facebook
+                  </a>
+                </td>
+                <td style="width: 25%;">
+                  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.clientearth.org/" target="_blank" style="color: white; text-decoration: none;">
+                    <img src="http://www.dev.clientearth.org/wp-content/uploads/ss_linkd.png" />
+                    <br/><br/> LinkedIn
+                  </a>
+                </td>
+                <td style="width: 25%;">
+                  <a href="https://twitter.com/share?url=http://www.clientearth.org/&text=Home+" target="_blank" style="color: white; text-decoration: none;">
+                    <img src="http://www.dev.clientearth.org/wp-content/uploads/ss_twitter.png" />
+                    <br/><br/> Twitter
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+  </td>
+  </div>
+</tr>
+
+
+</tbody>
+</table>
+
+</div>
+
+<!------------------------------------------------------
+--------- END OF PAGE CONTENT--------------------------------
+------------------------------------------------------->
+
+
+<!------------------------------------------------------
+--------- PAGE LOAD SCRIPTS ---------------------------------
+------------------------------------------------------->
+
+<script type="text/javascript">
+  var onProgMenu = false;
+$(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+    pause: true,
+    interval: 5000,
+  });
+  
+  $("#divProgrammesMenu").mouseenter(function () {
+    onProgMenu = true;
+    $("#divProgrammesMenu").show();
+  });
+
+  $("#divProgrammesMenu").mouseout(function () {
+    onProgMenu = false;
+  });
+  
+  $("#tdProgrammes").hover(function () {
+    $("#divProgrammesMenu").fadeIn();
+  },
+   function() {
+   	$("#divProgrammesMenu").fadeOut(); 
+  });
+  
+  
+  $("#tdSearch").append($("#SearchBox"));
+	$("#pageContentTitle").hide();
+  $("#contentBox").css("padding", "0");
+  $("#titleAreaBox").hide();
+  $("#SearchBox input").css("border", "1px solid white");
+  $("#SearchBox input").css("padding", "3px");
+  $("#SearchBox input").css("height", "25px");
+  $("#SearchBox input").css("width", "360px");
+});
+</script>
+
+<!------------------------------------------------------
+--------- EXTRA STYLES ---------------------------------
+------------------------------------------------------->
+
+<style>
+  /**** Small Calendar ***/     
+  .ms-acal-item{height: 17px !important;}     
+  .ms-acal-sdiv,     
+  .ms-acal-mdiv,     
+  .ms-acal-ctrlitem,     
+  .ms-acal-month-weeksel,     
+  .ms-acal-title,     
+  .ms-acal-month-top span{display: none;}     
+  .ms-acal-summary-itemrow TD DIV{height: 25px !important;}
+</style>
